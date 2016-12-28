@@ -5,8 +5,8 @@ set nocompatible
 syntax on
 
 " Color scheme
+"colorscheme kolor
 set background=dark
-colorscheme kolor
 "set columns=80
 "set ruler
 
