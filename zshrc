@@ -115,3 +115,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --disturl=https://npm.taobao.org/dist \
   --userconfig=$HOME/.cnpmrc"
 #source /usr/share/nvm/init-nvm.sh
+
+eudic() {
+	open http://dict.eudic.net/dicts/en/$1
+}
