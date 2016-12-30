@@ -7,6 +7,6 @@ SendEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
 SendEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
 SendEnv LC_IDENTIFICATION LC_ALL LANGUAGE
 SendEnv XMODIFIERS
-ControlPath /tmp/ssh_mux_%h_%p_%r
-ControlMaster auto
-ControlPersist 2h
+#ControlPath /tmp/ssh_mux_%h_%p_%r
+#ControlMaster auto
+#ControlPersist 2h
