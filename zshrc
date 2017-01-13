@@ -49,7 +49,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(sudo git z web-search extract tmux)
+plugins=(sudo git z web-search)
 
 # User configuration
 
@@ -102,6 +102,11 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 export LIBVIRT_DEFAULT_URI='qemu:///system'
+
+# tmux
+alias tl='tmux list-sessions'
+alias ts='tmux new-session -s'
+alias ta='tmux attach -t'
 
 alias vi="vim"
 alias sudo="sudo "
