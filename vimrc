@@ -15,6 +15,8 @@ set number
 set noswapfile
 set autowrite
 
+set isfname-==
+
 "set mouse=a
 " Code folding 
 set nofoldenable
