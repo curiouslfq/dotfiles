@@ -15,6 +15,7 @@ set number
 set noswapfile
 set autowrite
 
+" 不将=包括为文件名
 set isfname-==
 
 "set mouse=a
@@ -32,6 +33,8 @@ set foldmethod=syntax
 "set shiftwidth=4
 "set expandtab
 
+set shellcmdflag=-ic
+
 " 文件编码与格式
 set fileencodings=utf-8,gb18030,gbk
 set fileformats=unix,dos
@@ -39,6 +42,7 @@ filetype plugin indent on
 
 let mapleader = ","
 inoremap jj <ESC>
+nmap mm :w<CR>:make -j2<CR>
 
 set wrap "自动换行
 set wrapmargin=0
@@ -46,7 +50,7 @@ set linebreak
 set hlsearch "高亮显示结果
 set incsearch "在输入要搜索的文字时，vim会实时匹配
 
-set completeopt-=preview
+"set completeopt-=preview
 
 let g:clang_complete_copen=1
 let g:clang_complete_macros=1
@@ -70,7 +74,3 @@ map tt :TlistToggle<cr>
 "let Tlist_Sort_Type = 'name'
 "let Tlist_Close_On_Select = 1
 "let Tlist_Use_Right_Window = 1
-
-nmap <C-s> :w<CR>
-imap <C-s> <ESC>:w<CR>
-nmap mm :w<CR>:make -j2<CR>
