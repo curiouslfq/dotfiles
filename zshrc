@@ -12,7 +12,7 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
@@ -122,5 +122,9 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 #source /usr/share/nvm/init-nvm.sh
 
 eudic() {
-	open http://dict.eudic.net/dicts/en/$1
+	open "http://dict.eudic.net/dicts/en/$1"
+}
+
+translate() {
+	open "http://translate.google.cn/#en/zh-CN/$*"
 }
