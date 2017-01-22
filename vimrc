@@ -33,7 +33,7 @@ set foldmethod=syntax
 "set shiftwidth=4
 "set expandtab
 
-set shellcmdflag=-ic
+"set shellcmdflag=-ic
 
 " 文件编码与格式
 set fileencodings=utf-8,gb18030,gbk
