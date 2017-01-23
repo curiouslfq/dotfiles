@@ -126,5 +126,11 @@ eudic() {
 }
 
 translate() {
-	open "http://translate.google.cn/#en/zh-CN/$*"
+	if [ x"$1" = x"-f" ]; then
+		shift
+		c=`cat $1`
+	else
+		c="$*"
+	fi
+	open "http://translate.google.cn/#en/zh-CN/$c"
 }
