@@ -1,0 +1,10 @@
+remove control = Control_R
+remove lock = Caps_Lock
+keysym Control_R = Caps_Lock
+keysym Caps_Lock = Control_R
+add lock = Caps_Lock
+add control = Control_R
+
+! keycode 0x09 = Escape
+! keysym Escape = Caps_Lock
+! keysym Caps_Lock = Escape
