@@ -18,6 +18,8 @@ set autowrite
 " 不将=包括为文件名
 set isfname-==
 
+set modeline
+
 "set mouse=a
 " Code folding 
 set nofoldenable
@@ -27,18 +29,17 @@ set foldlevel=0
 set foldmethod=syntax
 "set foldenable
 
-" 设置缩进为4个空格
-"set tabstop=4
-"set softtabstop=4
-"set shiftwidth=4
-"set expandtab
-
-"set shellcmdflag=-ic
+" 设置缩进为8个空格
+set tabstop=8
+set noexpandtab
 
 " 文件编码与格式
 set fileencodings=utf-8,gb18030,gbk
 set fileformats=unix,dos
 filetype plugin indent on
+
+autocmd FileType python setlocal expandtab shiftround smartindent autoindent tabstop=8 shiftwidth=4 softtabstop=4
+autocmd FileType c setlocal noexpandtab shiftround autoindent cindent tabstop=8
 
 let mapleader = ","
 inoremap jj <ESC>
