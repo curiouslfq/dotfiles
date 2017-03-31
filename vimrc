@@ -20,7 +20,7 @@ set isfname-==
 
 set modeline
 
-"set mouse=a
+set mouse-=a
 " Code folding 
 set nofoldenable
 set foldnestmax=10
