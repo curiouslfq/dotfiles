@@ -49,7 +49,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z web-search)
+plugins=(z)
 
 # User configuration
 
@@ -122,17 +122,3 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --disturl=https://npm.taobao.org/dist \
   --userconfig=$HOME/.cnpmrc"
 #source /usr/share/nvm/init-nvm.sh
-
-eudic() {
-	open "http://dict.eudic.net/dicts/en/$1"
-}
-
-translate() {
-	if [ x"$1" = x"-f" ]; then
-		shift
-		c=`cat $1`
-	else
-		c="$*"
-	fi
-	open "http://translate.google.cn/#en/zh-CN/$c"
-}
