@@ -114,7 +114,6 @@ alias sudo="sudo "
 alias open="xdg-open"
 alias wget="wget --content-disposition"
 alias iftop="iftop -B -n -N"
-alias yaourt="yaourt --color"
 alias dd="dd status=progress"
 #alias for cnpm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
