@@ -111,7 +111,7 @@ alias ta='tmux attach -t'
 alias vi="vim"
 alias sudo="sudo "
 #alias sudo="sudo -E"
-alias open="xdg-open"
+alias open="gio open"
 alias wget="wget --content-disposition"
 alias iftop="iftop -B -n -N"
 alias dd="dd status=progress"
