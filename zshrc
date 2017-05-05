@@ -115,6 +115,7 @@ alias open="gio open"
 alias wget="wget --content-disposition"
 alias iftop="iftop -B -n -N"
 alias dd="dd status=progress"
+alias axel="axel -a -n 4%"
 #alias for cnpm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --cache=$HOME/.npm/.cache/cnpm \
