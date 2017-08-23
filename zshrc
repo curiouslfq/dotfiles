@@ -5,7 +5,7 @@ ZSH=/usr/share/oh-my-zsh/
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -107,6 +107,7 @@ export LIBVIRT_DEFAULT_URI='qemu:///system'
 alias tl='tmux list-sessions'
 alias ts='tmux new-session -s'
 alias ta='tmux attach -t'
+alias td='tmux detach -s'
 
 alias vi="vim"
 alias sudo="sudo "
@@ -116,6 +117,7 @@ alias wget="wget --content-disposition"
 alias iftop="iftop -B -n -N"
 alias dd="dd status=progress"
 alias axel="axel -a -n 4%"
+alias ping="ping -O"
 #alias for cnpm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --cache=$HOME/.npm/.cache/cnpm \
