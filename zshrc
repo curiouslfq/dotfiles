@@ -52,7 +52,9 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(z)
 
 # User configuration
-
+if [ -d "$HOME/bin" ] ; then
+    export PATH="$HOME/bin:$PATH"
+fi
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -124,3 +126,5 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --disturl=https://npm.taobao.org/dist \
   --userconfig=$HOME/.cnpmrc"
 #source /usr/share/nvm/init-nvm.sh
+
+export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
