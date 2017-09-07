@@ -136,4 +136,4 @@ export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 export JAVA_HOME="/usr/lib/jvm/default/"
 
-[[ -f $HOME/.passrc ]] && source $HOME/.passrc
+[[ -f $HOME/.passrc ]] && source $HOME/.passrc || true
