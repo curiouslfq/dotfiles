@@ -1,0 +1,4 @@
+neww -d -n mail mutt
+neww -d -n btrfs-progs -c /data/workspace/btrfs-progs/
+neww -d -n linux -c /data/workspace/linux/
+neww -d -n xfstests -c /data/workspace/xfstests-dev/
