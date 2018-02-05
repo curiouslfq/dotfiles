@@ -49,7 +49,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z)
+plugins=(z git)
 
 # User configuration
 if [ -d "$HOME/bin" ] ; then
@@ -112,14 +112,16 @@ alias ta='tmux attach -t'
 alias td='tmux detach -s'
 
 alias vi="vim"
-alias sudo="sudo "
-#alias sudo="sudo -E"
+#alias sudo="sudo "
+alias sudo="sudo -E "
 alias open="gio open"
 alias wget="wget --content-disposition"
 alias iftop="iftop -B -n -N"
 alias dd="dd status=progress"
 alias axel="axel -a -n 4%"
 alias ping="ping -O"
+alias df="df --exclude-type=tmpfs"
+alias iostat="iostat -Nh"
 #alias for cnpm
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --cache=$HOME/.npm/.cache/cnpm \
