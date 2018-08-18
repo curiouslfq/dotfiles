@@ -75,3 +75,5 @@ map tt :TlistToggle<cr>
 "let Tlist_Sort_Type = 'name'
 "let Tlist_Close_On_Select = 1
 "let Tlist_Use_Right_Window = 1
+
+"colorschem morning
