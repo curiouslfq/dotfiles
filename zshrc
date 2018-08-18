@@ -129,10 +129,10 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
   --userconfig=$HOME/.cnpmrc"
 #source /usr/share/nvm/init-nvm.sh
 
-export USE_CCACHE=1
-export CCACHE_COMPRESS=1
-export CCACHE_DIR="$HOME/.ccache"
-export PATH="/usr/lib/ccache/bin:$PATH"
+#export USE_CCACHE=1
+#export CCACHE_COMPRESS=1
+#export CCACHE_DIR="$HOME/.ccache"
+#export PATH="/usr/lib/ccache/bin:$PATH"
 
 export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
