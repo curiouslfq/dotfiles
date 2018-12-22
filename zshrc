@@ -122,20 +122,5 @@ alias axel="axel -a -n 4%"
 alias ping="ping -O"
 alias df="df --exclude-type=tmpfs"
 alias iostat="iostat -Nh"
-#alias for cnpm
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
-  --cache=$HOME/.npm/.cache/cnpm \
-  --disturl=https://npm.taobao.org/dist \
-  --userconfig=$HOME/.cnpmrc"
-#source /usr/share/nvm/init-nvm.sh
-
-#export USE_CCACHE=1
-#export CCACHE_COMPRESS=1
-#export CCACHE_DIR="$HOME/.ccache"
-#export PATH="/usr/lib/ccache/bin:$PATH"
-
-export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
-export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
-export JAVA_HOME="/usr/lib/jvm/default/"
 
 [[ -f $HOME/.passrc ]] && source $HOME/.passrc || true
