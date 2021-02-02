@@ -60,6 +60,16 @@ let Tlist_Exit_OnlyWindow = 1
 
 map tt :TlistToggle<cr>
 
+if executable('clangd')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'clangd',
+        \ 'cmd': {server_info->['clangd', '--header-insertion-decorators=false']},
+        \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
+        \ })
+endif
+
+autocmd Filetype c,h nnoremap <buffer> <silent> <c-]> :LspDefinition<cr>
+
 " vim-go
 let g:go_highlight_types = 1
 " let g:go_highlight_structs = 1
